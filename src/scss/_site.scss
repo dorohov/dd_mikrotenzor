@@ -1,4 +1,11 @@
 .__dd {
+    &__container {
+        max-width: 1580px;
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin: 0 auto;
+    }
     &__block {
         &-on {
             height: 60vh;
@@ -8,6 +15,27 @@
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
+            &__heading {
+                padding-top: 50px;
+                display: flex;
+                justify-content: space-between;
+                color: #fff;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .__dd {
+        &__block {
+            &-on {
+                height: 250px;
+                &__heading {
+                    padding-top: 30px;
+                    font-size: 16px;
+                }
+            }
         }
     }
 }
